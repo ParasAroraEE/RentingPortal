@@ -22,4 +22,7 @@ from rest_framework import routers
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('users/', include('users.urls')),
+    path('country/', include('country.urls')),
+    path('address/', include('address.urls')),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

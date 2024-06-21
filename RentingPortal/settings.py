@@ -40,6 +40,11 @@ INSTALLED_APPS = [
     # third_party admin
     'material',
     'material.admin',
+
+    # user apps
+    'users',
+    'country',
+    'address',
     
     # default
     # 'django.contrib.admin',
@@ -138,8 +143,8 @@ USE_TZ = True
 
 
 MATERIAL_ADMIN_SITE = {
-    'HEADER': _('PetShop'),  # Admin site header
-    'TITLE': _('PetShop'),  # Admin site title
+    'HEADER': _('RentingPortal'),  # Admin site header
+    'TITLE': _('RentingPortal'),  # Admin site title
     'SHOW_COUNTS': True,
     # 'FAVICON': '../media/favicon.ico',
     # 'PROFILE_PICTURE': '../media/small.png',  # Admin site profile picture (path to static should be specified)
